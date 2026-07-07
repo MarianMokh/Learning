@@ -1,0 +1,189 @@
+
+# ===== 1. Intro =====
+
+# Git
+It's open source and free source control management (SCM)
+
+# GitHub
+It's a hosting platform where you can collaborate
+with others on your Git repositories
+
+
+
+# ===== 2. Setup =====
+
+# Specify your name
+git config --global user.name "Marian Mokh"
+
+# Specify your email address
+git config --global user.email marianmoh21@gmail.com
+
+# Create a default branch
+git config --global init.defaultBranch main
+
+# Ask git for help
+git config --h
+
+# Documentation on the website
+git help config
+
+
+
+# ===== 3. Main =====
+
+# Change the directory / location
+cd C:/... or "C:\..."
+
+# Turn this into Git repository
+git init
+
+# Delete all commit history and Git tracking
+rm -rf .git
+
+# Get status of our repository
+git status
+
+# Track a file
+git add <name>
+
+# Untrack a file
+git rm --cached <name>
+
+# Untrack all files
+git rm --cached -r .
+
+# Take a snapshot of your repository
+git commit -m "message"
+
+# Skip over staging
+git commit -a -m "message"
+
+# Describe a more complex comment
+git commit
+
+
+
+# ===== 4. Advanced =====
+
+# Ignore specific files
+create file .gitignore
+
+# See what is modified
+git diff
+
+# Delete a file
+git rm "file"
+
+# Restore a deleted file
+git restore "file"
+
+# Rename a file
+git mv "old_name" "new_name"
+
+# See all previous commits
+git log
+
+# Brief version of log
+git log --oneline
+
+# Amend the last commit
+git commit -m "new_message" --amend
+
+# Jump back to the previous commit by hashtag
+git reset <0009b20>
+
+# Modify the history book
+git rebase -i --root
+
+
+
+# ===== 5. Collaboration =====
+
+# Create a new branch
+git branch <name>
+
+# Confirm how many branches we have
+git branch
+
+# Switch to the other branch
+git switch <name>
+
+# Create and switch to a branch
+git switch -c <name>
+
+# Delete a branch
+git branch -d <name>
+
+# Bring changes from another branch
+git merge -m "message" <feature-branch>
+
+# Update to the latest version
+git pull
+
+# Link your local repository to a remote one
+git remote add origin <url>
+
+# Delete the previous link
+git remote remove origin
+
+# Set target branch
+git branch -M <name>
+
+# git push all contents from our local repository to the cloud
+git push -u origin <name>
+
+# After the first push we can use shortcut
+git push
+
+
+
+# ===== 5. Clean commits =====
+
+# New feature
+feat
+
+# Bug fix
+fix
+
+# Documentation changes
+docs
+
+# Code formatting
+style
+
+# Code restructuring (no behavior change)
+refactor
+
+# Performance improvement
+perf
+
+# Adding or correcting tests
+test
+
+# Build system or external dependencies
+build
+
+# CI/CD configuration changes
+ci
+
+# Maintenance tasks
+chore
+
+# Revert previous commit
+revert
+
+# Best and most common for the very first commit
+git commit -m "Initial commit"
+
+# Practiacal example for short message
+git commit -m "fix: correct typo in login error message"
+
+# Practiacal example for last message
+feat(user): add password reset functionality
+
+- Implement email-based reset flow
+- Add new endpoint /auth/reset-password
+- Include rate limiting to prevent abuse
+- Update frontend form validation
+
+Closes #78
