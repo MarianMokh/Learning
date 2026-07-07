@@ -120,7 +120,7 @@ git branch -M <name>
 # Bring changes from another branch
 git merge -m "message" <feature-branch>
 
-# Update to the latest version
+# Update to the latest version (git fetch + git merge)
 git pull
 
 # Link your local repository to a remote one
