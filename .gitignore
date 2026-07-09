@@ -1,5 +1,8 @@
 # VSCode files
 .vscode/
 
-# Python files
+# Python cache
 __pycache__
+
+# Test file
+test.py
