@@ -34,9 +34,9 @@ print(f"Apple set: {apple_set}")
 banana_set = set("banana")
 print(f"Banana set: {banana_set}")
 
-# Combines elems from borh sets without duplication
-fruit_set = apple_set.union(banana_set)
-print(f"\nUnion: {fruit_set}")
+# Combine elems from both sets without duplication
+fruits = apple_set.union(banana_set)
+print(f"\nUnion: {fruits}")
 
 # Calculate the intersection of sets
 inter = apple_set.intersection(banana_set)
@@ -59,7 +59,7 @@ print(f"Update: {sym_diff}")
 
 # Immutable version of a normal set
 six_seven = frozenset([6, 7])
-print(f"\nImmutable legend: {six_seven}")
+print(f"\nImmutable legends: {six_seven}")
 
 # AttributeError
 # six_seven.add(8)
