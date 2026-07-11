@@ -24,7 +24,7 @@ last_name = "Moh"
 full = first_name + " " + last_name
 print("We can concatenate: " + full)
 
-# Expression, {} - curly braces
+# Expression, {} - curly braces, f - old .format()
 full = f"{first_name} {last_name}"
 print("Or use formatted: " + full)
 
