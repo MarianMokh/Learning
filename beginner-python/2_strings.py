@@ -1,6 +1,6 @@
 print("\n===== 1. Strings =====\n")
 
-# Set / assign a value to a variable
+# Ordered, immutable, text representation
 language = "Python"
 
 # Number of characters
@@ -16,6 +16,7 @@ print("And this is part of it: " + language[:2])
 
 print("\n===== 2. Formatted String =====\n")
 
+# Set / assign a value to a variable
 first_name = "Marian"
 last_name = "Moh"
 
