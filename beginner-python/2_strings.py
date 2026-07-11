@@ -1,6 +1,6 @@
 print("\n===== 1. Strings =====\n")
 
-# Ordered, immutable, text representation
+# Ordered, immutable, text representation, avoid errors
 language = "Python"
 
 # Number of characters
